@@ -38,6 +38,10 @@ export const TechDocsNotFound = ({ errorMessage }: Props) => {
     });
   }, [analyticsApi, entityRef, location]);
 
+  // const defaultNotFoundErrorPage = useApp().getComponents().NotFoundErrorPage;
+  // if (defaultNotFoundErrorPage) {
+  //   return defaultNotFoundErrorPage
+  // }
   let additionalInfo = '';
   if (![undefined, 'local'].includes(techdocsBuilder)) {
     additionalInfo =
